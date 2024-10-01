@@ -14,7 +14,6 @@ echo "<br>";
 echo $id;
 // Kiểm tra xem người dùng đã đăng nhập và có vai trò admin hay chưa
 if (isset($_SESSION['id']) && $_SESSION['id'] == $id) {
-    echo $_SESSION['user_role'];
     if (!empty($_GET['id'])) {
 
         $userModel->deleteUserById($id); // Xóa người dùng
@@ -24,7 +23,6 @@ if (isset($_SESSION['id']) && $_SESSION['id'] == $id) {
     }
 } else {
     $_SESSION['message'] = 'Bạn không có quyền xóa người dùng.';
-    echo isset($_SESSION['user_role']);
     echo "null";
 }
 

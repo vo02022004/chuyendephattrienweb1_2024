@@ -77,8 +77,9 @@ if (empty($_SESSION['csrf_token'])) {
                                 <a href="view_user.php?id=<?php echo $user['id'] ?>">
                                     <i class="fa fa-eye" aria-hidden="true" title="View"></i>
                                 </a>
-                                <a
-                                    href="delete_user.php?id=<?php echo encrypt_id($user['id']); ?>&csrf_token=<?php echo $_SESSION['csrf_token']; ?>">
+
+                                <a href="delete_user.php?id=<?php echo encrypt_id($user['id']); ?>&csrf_token=<?php echo $_SESSION['csrf_token']; ?>"
+                                    onclick="return confirm('Bạn có chắc chắn muốn xóa người dùng này không?');">
                                     <i class="fa fa-eraser" aria-hidden="true" title="Delete"></i>
                                 </a>
                             </td>
