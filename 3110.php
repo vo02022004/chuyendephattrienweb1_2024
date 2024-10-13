@@ -69,7 +69,6 @@ $less->compileFile('less/3110.less', outFname: 'css/3110.css');
                 <i class="icon-pencil"></i>
                 <textarea placeholder="Enter your message *" required></textarea>
             </div>
-            <button type="submit">Send</button>
         </form>
     </section>
 

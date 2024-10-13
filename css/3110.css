@@ -88,18 +88,6 @@ body {
   height: 100px;
   resize: none;
 }
-.contact-section .contact-form button {
-  background-color: #17a589;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 16px;
-}
-.contact-section .contact-form button:hover {
-  background-color: #117864;
-}
 @media (min-width: 1000px) {
   .contact-section .contact-form .input-row {
     display: flex;
