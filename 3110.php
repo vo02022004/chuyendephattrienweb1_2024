@@ -22,6 +22,8 @@ $less->compileFile('less/3110.less', outFname: 'css/3110.css');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="css/3110.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
 </head>
 
 <body>
@@ -37,17 +39,17 @@ $less->compileFile('less/3110.less', outFname: 'css/3110.css');
 
         <div class="info-boxes">
             <div class="info-box">
-                <i class="icon-location"></i>
+                <i class="bi bi-geo-alt"></i>
                 <h3>ADDRESS</h3>
                 <p>123 Western Street, Sydney, Australia</p>
             </div>
             <div class="info-box">
-                <i class="icon-phone"></i>
+                <i class="bi bi-telephone"></i>
                 <h3>PHONE NUMBER</h3>
                 <p>+456 789 0321</p>
             </div>
             <div class="info-box">
-                <i class="icon-clock"></i>
+                <i class="bi bi-clock"></i>
                 <h3>OPENING HOURS</h3>
                 <p>All Days: 9am to 6pm</p>
             </div>
