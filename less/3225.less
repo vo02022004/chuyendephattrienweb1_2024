@@ -1,0 +1,72 @@
+@primary-color: #5cb85c; // Green color for ratings
+@price-color: #333; // Text color for prices
+@new-badge-color: #ffcc00; // Color for "New" badge
+
+
+
+  .product-card {
+    margin-bottom: 10px; 
+    padding: 10px; 
+    img {
+      max-width: 100%;
+      background-size: cover;
+      height: auto;
+      border-bottom: 1px solid #ddd;
+    }
+    .hover-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 224, 130, 0.8); 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        font-size: 1.2rem;
+        color: #333;
+        pointer-events: none; 
+      }
+    
+      &:hover {
+        transform: scale(1.05);
+    
+        .hover-overlay {
+          opacity: 1; 
+        }
+      }
+    .product-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin: 10px 0;
+      text-align: center;
+    }
+
+    .product-price {
+      color: @price-color;
+      font-size: 1.1rem;
+      margin: 5px 0;
+      text-align: center;
+
+    }
+
+    .product-rating {
+      color: @primary-color;
+      text-align: center;
+
+    }
+
+    .new-badge {
+      background-color: @new-badge-color;
+      color: #fff;
+      padding: 3px 8px;
+      border-radius: 5px;
+      font-size: 0.8rem;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  }
+
